@@ -14,7 +14,6 @@ class App extends Component {
   }
 
   nameChangeHandler = (event, id) => {
-
     const personIndex = this.state.persons.findIndex(p => {
       return p.id === id;
     });
@@ -71,10 +70,14 @@ class App extends Component {
       style.backgroundColor = 'red';
     }
 
+    let classes = [];
+
+    
+
     return (
       <div className="App">
        <h1>Hello, Leo!</h1>
-       <p>This is really working!</p>
+       <p className={classes}>This is really working!</p>
 
        <button 
        style={style}
