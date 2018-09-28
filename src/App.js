@@ -45,7 +45,6 @@ class App extends Component {
     let persons = null;
     let btnClass = '';
 
-
     if (this.state.showPersons) {
       persons = (
         <div>
